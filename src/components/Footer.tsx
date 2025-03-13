@@ -9,16 +9,23 @@ const Footer: React.FC = () => {
       <div className="container max-w-4xl mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <p className="text-sm text-gray-500">
-            © {currentYear} Graphic Designer. All rights reserved.
+            © {currentYear} Tahmid Shahriar. All rights reserved.
           </p>
           
           <div className="mt-4 md:mt-0">
             <nav>
               <ul className="flex space-x-6">
-                <li><a href="#about" className="text-sm text-gray-500 hover:text-gray-800">About</a></li>
-                <li><a href="#skills" className="text-sm text-gray-500 hover:text-gray-800">Skills</a></li>
-                <li><a href="#work" className="text-sm text-gray-500 hover:text-gray-800">Work</a></li>
-                <li><a href="#contact" className="text-sm text-gray-500 hover:text-gray-800">Contact</a></li>
+                {['About', 'Skills', 'Work', 'Contact'].map((item) => (
+                  <li key={item} className="relative group">
+                    <a 
+                      href={`#${item.toLowerCase()}`} 
+                      className="text-sm text-gray-500 group-hover:text-gray-800 transition-colors duration-300"
+                    >
+                      {item}
+                      <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gray-800 transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                  </li>
+                ))}
               </ul>
             </nav>
           </div>

@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { cn } from '@/lib/utils';
+import { HoverCard, HoverCardContent, HoverCardTrigger } from "@/components/ui/hover-card";
 
 const Header: React.FC = () => {
   return (
@@ -11,10 +12,17 @@ const Header: React.FC = () => {
         </div>
         <nav className="hidden md:block">
           <ul className="flex space-x-8">
-            <li><a href="#about" className="text-sm hover:underline">About</a></li>
-            <li><a href="#skills" className="text-sm hover:underline">Skills</a></li>
-            <li><a href="#work" className="text-sm hover:underline">Work</a></li>
-            <li><a href="#contact" className="text-sm hover:underline">Contact</a></li>
+            {['About', 'Skills', 'Work', 'Contact'].map((item) => (
+              <li key={item} className="relative group">
+                <a 
+                  href={`#${item.toLowerCase()}`} 
+                  className="text-sm group-hover:text-primary transition-colors duration-300"
+                >
+                  {item}
+                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+                </a>
+              </li>
+            ))}
           </ul>
         </nav>
       </div>
