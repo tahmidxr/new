@@ -7,7 +7,7 @@ const Header: React.FC = () => {
     <header className="w-full py-6">
       <div className="container flex justify-between items-center">
         <div>
-          <h1 className="text-xl font-mono font-bold">Portfolio</h1>
+          <h1 className="text-xl font-mono font-bold">Tahmid Shahriar</h1>
         </div>
         <nav className="hidden md:block">
           <ul className="flex space-x-8">
