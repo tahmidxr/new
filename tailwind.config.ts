@@ -102,11 +102,19 @@ export default {
 				'gradient-x': {
 					'0%, 100%': {
 						'background-position': '0% 50%',
-						'background-size': '200% 200%'
+						'background-size': '300% 300%'
+					},
+					'25%': {
+						'background-position': '25% 75%',
+						'background-size': '300% 300%'
 					},
 					'50%': {
 						'background-position': '100% 50%',
-						'background-size': '200% 200%'
+						'background-size': '300% 300%'
+					},
+					'75%': {
+						'background-position': '75% 25%',
+						'background-size': '300% 300%'
 					}
 				}
 			},
@@ -115,7 +123,7 @@ export default {
 				'accordion-up': 'accordion-up 0.2s ease-out',
 				'fade-in': 'fade-in 0.5s ease-out',
 				'slide-up': 'slide-up 0.7s ease-out',
-				'gradient-x': 'gradient-x 15s ease infinite'
+				'gradient-x': 'gradient-x 15s ease-in-out infinite'
 			}
 		}
 	},

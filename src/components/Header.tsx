@@ -6,7 +6,7 @@ import { HoverCard, HoverCardContent, HoverCardTrigger } from "@/components/ui/h
 const Header: React.FC = () => {
   return (
     <header className="w-full py-6 relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-r from-blue-50 via-purple-50 to-pink-50 animate-gradient-x z-0"></div>
+      <div className="absolute inset-0 bg-gradient-to-r from-blue-50/80 via-purple-50/80 to-pink-50/80 animate-gradient-x z-0"></div>
       <div className="container flex justify-between items-center relative z-10">
         <div>
           <h1 className="text-xl font-mono font-bold">Tahmid Shahriar</h1>

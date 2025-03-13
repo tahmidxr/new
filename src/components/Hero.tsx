@@ -10,7 +10,7 @@ const Hero: React.FC = () => {
 
   return (
     <section className="min-h-[calc(100vh-76px)] flex flex-col justify-center relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-r from-blue-50 via-purple-50 to-pink-50 animate-gradient-x z-0"></div>
+      <div className="absolute inset-0 bg-gradient-to-r from-blue-50/80 via-purple-50/80 to-pink-50/80 animate-gradient-x z-0"></div>
       <div className="container max-w-4xl mx-auto px-4 py-20 animate-fade-in relative z-10">
         <h1 className="text-4xl md:text-6xl font-bold mb-6 font-poppins">
           hi, I'm Tahmid ..
