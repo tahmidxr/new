@@ -12,11 +12,10 @@ const Hero: React.FC = () => {
     <section className="min-h-[calc(100vh-76px)] flex flex-col justify-center">
       <div className="container max-w-4xl mx-auto px-4 py-20 animate-fade-in">
         <h1 className="text-4xl md:text-6xl font-bold mb-6">
-          Graphic Designer Crafting Engaging Visual Stories
+          hi, I.m Tahmid ..
         </h1>
         <p className="text-lg md:text-xl text-gray-600 mb-10 max-w-2xl">
-          Transforming ideas into visually compelling designs. Specializing in digital illustration, 
-          brand identity, and creative solutions that make a lasting impression.
+          Currently working as a Graphic Designer and Social Media Expart..
         </p>
         <div className="flex flex-col sm:flex-row gap-4">
           <Button 
